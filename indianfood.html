@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home.css" type="text/css">
+    <link rel="stylesheet" href="home.css" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -20,16 +20,16 @@
         <tr>
             <td width="5%">
                 <a href="#" onclick="change('prev')">
-                    <img class="arrow" src="images/left-arrow.png" alt="Left Arrow" title="Prev">
+                    <img class="arrow" src="left-arrow.png" alt="Left Arrow" title="Prev">
                 </a>
             </td>
 
             <td width="90%">
-                <img class="cuisine" id="cuisine" src="images/indianfood0.jpg" alt="Indian Curry" title="Indian Curry">
+                <img class="cuisine" id="cuisine" src="indianfood0.jpg" alt="Indian Curry" title="Indian Curry">
             </td>
             <td width="5%">
                 <a href="#" onclick="change('next')">
-                    <img class="arrow" src="images/right-arrow.png" alt="Right Arrow" title="Next">
+                    <img class="arrow" src="right-arrow.png" alt="Right Arrow" title="Next">
                 </a>
             </td>
         </tr>
@@ -72,13 +72,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $("#navbar").load("../navbar.html");
+            $("#navbar").load("navbar.html");
         });
     </script>
 
     <script>
         $(function () {
-            $("#footer").load("../footer.html");
+            $("#footer").load("footer.html");
         });
     </script>
     <script>
@@ -94,14 +94,14 @@
                 count++;
 
             if (count == 1) {
-                document.getElementById("cuisine").src = "images/indianfood1.JPG";
+                document.getElementById("cuisine").src = "indianfood1.JPG";
                 document.getElementById("cuisine").alt = "Thosai";
                 document.getElementById("cuisine").title = "Thosai";
                 document.getElementById("cuisinetitle").innerHTML = "2. Thosai";
                 document.getElementById("cuisinedesc").innerHTML = "Thosai, or dosa, is a popular South Indian crepe enjoyed in Malaysia. Made from a fermented batter of rice and lentils, it's cooked until crispy and served with coconut chutney, sambar, and spicy dipping sauce. Loved for its versatility and nutritional benefits, it's a cherished part of Malaysia's diverse culinary scene.";
             }
             else if (count == 2) {
-                document.getElementById("cuisine").src = "images/indianfood2.JPG";
+                document.getElementById("cuisine").src = "indianfood2.JPG";
                 document.getElementById("cuisine").alt = "Nasi Biryani";
                 document.getElementById("cuisine").title = "Nasi Biryani";
                 document.getElementById("cuisinetitle").innerHTML = "3. Nasi Biryani";
@@ -109,7 +109,7 @@
             }
             else {
                 count = 0;
-                document.getElementById("cuisine").src = "images/indianfood0.JPG";
+                document.getElementById("cuisine").src = "indianfood0.JPG";
                 document.getElementById("cuisine").alt = "Indian Curry";
                 document.getElementById("cuisine").title = "Indian Curry";
                 document.getElementById("cuisinetitle").innerHTML = "1. Indian Curry";

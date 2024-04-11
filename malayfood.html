@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home.css" type="text/css">
+    <link rel="stylesheet" href="home.css" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
@@ -20,16 +20,16 @@
         <tr>
             <td width="5%">
                 <a href="#" onclick="change('prev')">
-                    <img class="arrow" src="images/left-arrow.png" alt="Left Arrow" title="Prev">
+                    <img class="arrow" src="left-arrow.png" alt="Left Arrow" title="Prev">
                 </a>
             </td>
 
             <td width="90%">
-                <img class="cuisine" id="cuisine" src="images/malayfood0.jpg" alt="Nasi lemak" title="Nasi lemak">
+                <img class="cuisine" id="cuisine" src="malayfood0.jpg" alt="Nasi lemak" title="Nasi lemak">
             </td>
             <td width="5%">
                 <a href="#" onclick="change('next')">
-                    <img class="arrow" src="images/right-arrow.png" alt="Right Arrow" title="Next">
+                    <img class="arrow" src="right-arrow.png" alt="Right Arrow" title="Next">
                 </a>
             </td>
         </tr>
@@ -68,13 +68,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $("#navbar").load("../navbar.html");
+            $("#navbar").load("navbar.html");
         });
     </script>
 
     <script>
         $(function () {
-            $("#footer").load("../footer.html");
+            $("#footer").load("footer.html");
         });
     </script>
     <script>
@@ -91,14 +91,14 @@
                 count++;
 
             if (count == 1) {
-                document.getElementById("cuisine").src = "images/malayfood1.JPG";
+                document.getElementById("cuisine").src = "malayfood1.JPG";
                 document.getElementById("cuisine").alt = "Nasi Kerabu";
                 document.getElementById("cuisine").title = "Nasi Kerabu";
                 document.getElementById("cuisinetitle").innerHTML = "2. Nasi Kerabu";
                 document.getElementById("cuisinedesc").innerHTML = "Nasi Kerabu is a traditional Malay dish originating from the northeastern states of Malaysia, characterized by its vibrant blue rice, which is colored using the petals of the butterfly pea flower. The rice is typically served with an assortment of fresh herbs and vegetables, such as shredded coconut, bean sprouts, long beans, and cucumber, as well as various proteins like fried fish, grilled chicken, or beef rendang. Additionally, Nasi Kerabu is often accompanied by a tangy and spicy sambal sauce, creating a flavorful and visually striking culinary experience.";
             }
             else if (count == 2) {
-                document.getElementById("cuisine").src = "images/malayfood2.JPG";
+                document.getElementById("cuisine").src = "malayfood2.JPG";
                 document.getElementById("cuisine").alt = "Lemang";
                 document.getElementById("cuisine").title = "Lemang";
                 document.getElementById("cuisinetitle").innerHTML = "3. Lemang";
@@ -106,7 +106,7 @@
             }
             else {
                 count = 0;
-                document.getElementById("cuisine").src = "images/malayfood0.JPG";
+                document.getElementById("cuisine").src = "malayfood0.JPG";
                 document.getElementById("cuisine").alt = "Nasi Lemak";
                 document.getElementById("cuisine").title = "Nasi Lemak";
                 document.getElementById("cuisinetitle").innerHTML = "1. Nasi Lemak";
